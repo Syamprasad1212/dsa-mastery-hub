@@ -34,7 +34,7 @@ export const ProgressBar = ({
         <div
           className={cn(
             "h-full rounded-full transition-all duration-500 ease-out progress-gradient",
-            percentage === 100 && "bg-primary"
+            percentage === 100 && "bg-emerald-400"
           )}
           style={{ width: `${percentage}%` }}
         />

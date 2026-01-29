@@ -25,7 +25,7 @@ export const Header = () => {
               Original Sheet
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Syamprasad1212"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-muted transition-colors"

@@ -14,8 +14,8 @@ interface ProblemItemProps {
 export const ProblemItem = ({ problem, index, status, onStatusChange }: ProblemItemProps) => {
   return (
     <div className={cn(
-      "problem-row group",
-      status === 'solved' && "bg-primary/5"
+      "problem-row group transition-colors hover:bg-slate-50",
+      status === 'solved' && "bg-emerald-50"
     )}>
       <span className="text-sm font-mono text-muted-foreground w-8">
         {String(index).padStart(2, '0')}
@@ -25,8 +25,8 @@ export const ProblemItem = ({ problem, index, status, onStatusChange }: ProblemI
       
       <div className="flex-1 min-w-0">
         <span className={cn(
-          "text-sm font-medium transition-colors",
-          status === 'solved' && "text-muted-foreground line-through"
+          "text-sm font-medium text-slate-800 transition-colors",
+          status === 'solved' && "text-slate-400 line-through"
         )}>
           {problem.title}
         </span>

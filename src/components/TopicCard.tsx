@@ -21,10 +21,10 @@ export const TopicCard = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="topic-card">
+    <div className="topic-card mb-2">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full p-5 flex items-center gap-4 hover:bg-muted/30 transition-colors"
+        className="w-full p-5 flex items-center gap-4 rounded-lg transition-all duration-200 hover:bg-emerald-50 hover:border hover:border-emerald-300"
       >
         <div className={cn(
           "flex items-center justify-center h-8 w-8 rounded-lg transition-colors",
@@ -39,7 +39,7 @@ export const TopicCard = ({
         
         <div className="flex-1 text-left">
           <div className="flex items-center gap-3">
-            <h3 className="font-semibold text-lg">{topic.name}</h3>
+            <h3 className="font-semibold text-lg text-slate-800">{topic.name}</h3>
             <span className="text-sm text-muted-foreground">
               {progress.solved}/{progress.total}
             </span>

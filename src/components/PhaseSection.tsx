@@ -18,13 +18,16 @@ export const PhaseSection = ({
   updateProblemStatus,
 }: PhaseSectionProps) => {
   return (
-    <section className="mb-12">
+    <section className="mb-12 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6">
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <h2 className="text-2xl font-bold">{phase.name}</h2>
-          <span className="text-sm font-medium text-muted-foreground">
-            {phaseProgress.solved}/{phaseProgress.total} problems
-          </span>
+         <h2 className="text-2xl font-bold text-slate-900">
+  {phase.name}
+</h2>
+
+<span className="text-sm font-medium text-emerald-600">
+  {phaseProgress.solved}/{phaseProgress.total} problems
+</span>
         </div>
         <p className="text-muted-foreground mb-4">{phase.description}</p>
         <ProgressBar percentage={phaseProgress.percentage} size="md" />
